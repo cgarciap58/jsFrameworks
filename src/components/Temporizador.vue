@@ -12,7 +12,7 @@ export default {
   name: 'Temporizador',
   data() {
     return {
-      timeLeft: 602,
+      timeLeft: 65,
       isRunning: false,
       isPomodoro: true,
       interval: null,
@@ -28,7 +28,7 @@ export default {
       if (this.timeLeft <= 60) return 'bg-red';
       else if (this.timeLeft <= 300) return 'bg-yellow';
       else if (this.timeLeft <= 600) return 'bg-green';
-      else return 'bg-default';
+      else return 'bg-green';
     }
   },
   watch: {
@@ -69,7 +69,7 @@ export default {
     resetTimer() {
       clearInterval(this.interval);
       this.isRunning = false;
-      this.timeLeft = this.isPomodoro ? 1500 : 300;
+      this.timeLeft = this.isPomodoro ? 305 : 300;
     },
     switchToBreak() {
       this.isPomodoro = !this.isPomodoro;

@@ -1,5 +1,7 @@
 <script setup>
-import Temporizador from './components/Temporizador.vue';
+import Temporizador from './components/transiciones.vue';
+// import Temporizador from './components/Temporizador.vue';
+
 </script>
 
 <template>
@@ -23,6 +25,7 @@ import Temporizador from './components/Temporizador.vue';
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -30,26 +33,4 @@ import Temporizador from './components/Temporizador.vue';
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
-</style>
-
-<style>
-body {
-  transition: background 1s ease-in-out;
-}
-
-.bg-default {
-  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-}
-
-.bg-green {
-  background: linear-gradient(to bottom right, #81c784, #c8e6c9);
-}
-
-.bg-yellow {
-  background: linear-gradient(to bottom right, #fff176, #fff9c4);
-}
-
-.bg-red {
-  background: linear-gradient(to bottom right, #ff4d4d, #ffcdd2);
-}
 </style>

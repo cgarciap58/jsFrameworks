@@ -77,3 +77,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.background-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+
+.background-transition-enter-active,
+.background-transition-leave-active {
+  transition: background-color 1s ease;
+}
