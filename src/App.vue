@@ -1,5 +1,5 @@
 <script setup>
-import Temporizador from './components/transiciones.vue';
+import Temporizador from './components/Temporizador.vue';
 // import Temporizador from './components/Temporizador.vue';
 
 </script>
