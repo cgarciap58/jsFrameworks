@@ -17,8 +17,8 @@ import Temporizador from './components/transiciones.vue';
 
 <style scoped>
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 10em;
+  padding: 0.1em;
   will-change: filter;
   transition: filter 300ms;
 }
