@@ -15,7 +15,7 @@ export default {
   name: 'MergedTimerWithTransitions',
   data() {
     return {
-      timeLeft: 305,
+      timeLeft: 50,
       isRunning: false,
       isPomodoro: true,
       interval: null,
@@ -32,7 +32,7 @@ export default {
   watch: {
     timeLeft(newVal) {
       if (newVal <= 60) {
-        this.backgroundColor = 'lightcoral';
+        this.backgroundColor = 'red';
       } else if (newVal <= 300) {
         this.backgroundColor = 'khaki';
       } else {
