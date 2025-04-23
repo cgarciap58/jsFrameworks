@@ -86,7 +86,7 @@ export default {
 .timer-box {
   max-width: 400px;
   min-width: 350px;
-  margin: 100px auto;
+  margin: 10px auto;
   background-color: rgb(12, 12, 12, 0.75);
   border-radius: 20px;
   padding: 2rem;
