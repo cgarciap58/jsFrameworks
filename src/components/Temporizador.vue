@@ -87,7 +87,7 @@ export default {
   max-width: 400px;
   min-width: 350px;
   margin: 100px auto;
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(12, 12, 12, 0.75);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
