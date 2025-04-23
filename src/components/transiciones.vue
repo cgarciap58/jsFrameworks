@@ -15,7 +15,7 @@ export default {
   name: 'MergedTimerWithTransitions',
   data() {
     return {
-      timeLeft: 50,
+      timeLeft: 305,
       isRunning: false,
       isPomodoro: true,
       interval: null,
