@@ -1,6 +1,6 @@
 <script setup>
 import Temporizador from './components/Temporizador.vue';
-// import Temporizador from './components/Temporizador.vue';
+// Aquí importamos el componente desde './components/Temporizador.vue';
 
 </script>
 
