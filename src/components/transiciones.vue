@@ -1,11 +1,14 @@
 <template>
-  <div class="timer-container">
-    <h1>{{ isPomodoro ? 'Temporizador' : 'Descanso' }}</h1>
-    <p>{{ formattedTime }}</p>
-    <button @click="toggleTimer">{{ isRunning ? 'Pausa' : 'Iniciar' }}</button>
-    <button v-if="!isRunning" @click="resetTimer">Reiniciar</button>
+  <div class="timer-box">
+    <h1 class="title">{{ isPomodoro ? 'Temporizador' : 'Descanso' }}</h1>
+    <div class="time">{{ formattedTime }}</div>
+    <div class="button-group">
+      <button class="main-btn" @click="toggleTimer">{{ isRunning ? 'Pausa' : 'Iniciar' }}</button>
+      <button v-if="!isRunning" class="reset-btn" @click="resetTimer">Reiniciar</button>
+    </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -62,7 +65,7 @@ export default {
     }
   },
   mounted() {
-    document.body.style.transition = 'background-color 0.5s ease';
+    document.body.style.transition = 'background-color 2s ease';
     document.body.style.backgroundColor = this.backgroundColor;
   },
   beforeDestroy() {
@@ -79,4 +82,61 @@ export default {
   min-height: 200px;
   border-radius: 10px;
 }
+
+.timer-box {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-btn,
+.reset-btn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.main-btn {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.main-btn:hover {
+  background-color: #e63a3a;
+}
+
+.reset-btn {
+  background-color: #eeeeee;
+  color: #333;
+}
+
+.reset-btn:hover {
+  background-color: #dddddd;
+}
+
+
 </style>
