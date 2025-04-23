@@ -32,7 +32,7 @@ export default {
   watch: {
     timeLeft(newVal) {
       if (newVal <= 60) {
-        this.backgroundColor = 'red';
+        this.backgroundColor = 'lightcoral';
       } else if (newVal <= 300) {
         this.backgroundColor = 'khaki';
       } else {
@@ -86,7 +86,7 @@ export default {
 .timer-box {
   max-width: 400px;
   min-width: 350px;
-  margin: 10px auto;
+  margin: 100px auto;
   background-color: rgb(12, 12, 12);
   border-radius: 20px;
   padding: 2rem;
