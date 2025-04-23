@@ -85,8 +85,9 @@ export default {
 
 .timer-box {
   max-width: 400px;
+  min-width: 350px;
   margin: 100px auto;
-  background-color: white;
+  background-color: rgb(12, 12, 12);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -96,12 +97,14 @@ export default {
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: rgb(227, 212, 212);
 }
 
 .time {
   font-size: 5rem;
   font-weight: bold;
   margin: 1.5rem 0;
+  color: rgb(225, 209, 209);
 }
 
 .button-group {
