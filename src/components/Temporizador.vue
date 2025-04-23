@@ -32,7 +32,7 @@ export default {
   watch: {
     timeLeft(newVal) {
       if (newVal <= 60) {
-        this.backgroundColor = 'lightcoral';
+        this.backgroundColor = 'red';
       } else if (newVal <= 300) {
         this.backgroundColor = 'khaki';
       } else {
